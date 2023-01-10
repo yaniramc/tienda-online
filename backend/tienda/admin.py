@@ -6,8 +6,16 @@ from .models import Product, ShoppingCart, Order
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'price', 'stock']
+    list_display = ['id', 'name', 'price', 'stock', 'description', 'image']
 
 
-admin.site.register(ShoppingCart)
-admin.site.register(Order)
+@admin.register(ShoppingCart)
+class ShoppingCartAdmin(admin.ModelAdmin):
+    list_display = ['id', 'user', 'product', 'product_quantity']
+
+
+@admin.register(Order)
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ['id', 'user', 'product', 'purchase_date', 'total_price', 'status']
+
+

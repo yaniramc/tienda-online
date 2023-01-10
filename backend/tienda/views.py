@@ -1,22 +1,24 @@
 
-from django.views import generic
+from rest_framework import viewsets
+from rest_framework import permissions
 
-from .models import Product
-
-
-class ProductListView(generic.ListView):
-
-    model = Product
-    template_name = 'tienda/index.html'
-    context_object_name = 'products_list'
-
-    def get_queryset(self):
-        return Product.objects.all()
+from .models import Product, ShoppingCart, Order
+from .serializers import ProductSerializer, ShoppingCartSerializer, OrderSerializer
 
 
-class ProductDetailView(generic.DetailView):
-    model = Product
-    template_name = 'tienda/detail.html'
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    permission_classes = [permissions.AllowAny]
 
 
+class ShoppingCartViewSet(viewsets.ModelViewSet):
+    queryset = ShoppingCart.objects.all()
+    serializer_class = ShoppingCartSerializer
+    permission_classes = [permissions.AllowAny]
 
+
+class OrderViewSet(viewsets.ModelViewSet):
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
+    permission_classes = [permissions.AllowAny]
