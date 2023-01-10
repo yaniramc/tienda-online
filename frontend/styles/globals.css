@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+body {
+    font-family: 'PT Serif', serif;
+}
+
+.btn {
+    background-color: #CCA25B;
+}
+.btn:hover {
+    background-color: #875809;
+}
+
+.btn-registrate {
+    background-color: #875809;
+}
+
+
+footer {
+    background-color: #503406;
+}
+
+.contacto {
+    color: #EBC27E;
+}
+
+
+.banner-header {
+    background-image: url("../public/images/banner-header.svg");
+    background-position: center center, center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: auto;
+    height: 700px;
+}
+
+.title {
+    color: white;
+    font-size: 100px;
+    padding-top: 200px;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.background-shoppingCart {
+    background-color: lightgrey;
+    border: 4px solid black;
+}
