@@ -6,8 +6,9 @@ export default function Header() {
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" href="/"></Link>
-                    <img src="/images/logo.svg" width={250} height={250} alt="carrito-compra"/>
+                    <Link className="navbar-brand" href="/">
+                        <img src="/images/logo.svg" width={150} height={150} alt="carrito-compra"/>
+                    </Link>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav"
@@ -25,13 +26,13 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link btn nav-link text-white me-md-2" type="button" href="#">Iniciar
+                                <Link className="nav-link btn generic-button nav-link text-white me-md-2" type="button" href="/pageLogin">Iniciar
                                     sesión
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link btn btn-registrate nav-link text-white" type="button"
-                                   href="#">Regístrate
+                                <Link className="nav-link btn btn-secondary nav-link text-white" type="button"
+                                   href="/pageRegister">Regístrate
                                 </Link>
                             </li>
                         </ul>

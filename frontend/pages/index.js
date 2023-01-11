@@ -23,14 +23,14 @@ export default function Home({productList}) {
                     <div className="row">
                         <div className="col-sm-4 col-md-6">
                             <h1 className="title">Hecho a mano para tu hogar</h1>
-                            <button type="button" className="btn btn btn-lg text-white">COMPRAR</button>
+                            <a href="#product-list" type="button" className="btn generic-button btn-lg">COMPRAR</a>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div className="container py-5">
+            <div id="product-list" className="container py-5">
                 <div className="row g-5">
                     {productList.map((product, index) => {
                         return (

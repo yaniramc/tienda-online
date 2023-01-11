@@ -4,11 +4,13 @@ body {
     font-family: 'PT Serif', serif;
 }
 
-.btn {
+.generic-button {
     background-color: #CCA25B;
+    color: white;
 }
-.btn:hover {
+.generic-button:hover {
     background-color: #875809;
+    color: white;
 }
 
 .btn-registrate {
@@ -23,6 +25,9 @@ footer {
 .contacto {
     color: #EBC27E;
 }
+.contacto:hover {
+    color: white;
+}
 
 
 .banner-header {
@@ -33,6 +38,30 @@ footer {
     object-fit: cover;
     width: auto;
     height: 700px;
+}
+
+.banner-login {
+    background-image: url("../public/images/banner-login.png");
+    background-position: center center, center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: auto;
+    height: 700px;
+}
+
+.banner-register {
+    background-image: url("../public/images/banner-register.png");
+    background-position: center center, center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: auto;
+    height: 700px;
+}
+
+.form-login {
+    color: #503406;
 }
 
 .title {
