@@ -6,11 +6,10 @@ export default function PageLogin() {
         <>
 
             <Header></Header>
-
-            <div className="container-fluid banner-login">
-                <div className="container py-5 mt-3">
+            <div className="banner-login">
+                <div className="container py-5 mt-3 container-login">
                     <div className="row d-flex justify-content-end py-5">
-                        <div className="col-sm-4 py-5 form-login">
+                        <div className="col-sm-6 py-5 form-login content-login">
                             <h1>Inicia Sesión</h1>
                             <div className="mb-3 pt-3">
                                 <label htmlFor="userName" className="form-label">Usuario</label>

@@ -7,9 +7,9 @@ export default function PageLogin() {
 
             <Header></Header>
 
-            <div className="container-fluid banner-register">
-                <div className="container py-5 mt-3">
-                    <div className="row d-flex justify-content-center align-self-center py-5">
+            <div className="banner-register">
+                <div className="container py-5 mt-3 container-register">
+                    <div className="row d-flex justify-content-center align-self-center py-5 content-register">
                         <div className="col-sm-4 py-5 text-white">
                             <h1>Crear cuenta</h1>
                             <div className="mb-3 pt-3">
