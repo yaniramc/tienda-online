@@ -14,11 +14,7 @@ export default function ProductDetail({productCardDetail}) {
             <Header></Header>
 
             <div className="container">
-                {productCardDetail.map((productCardDetail, index) => {
-                    return (
-                    <ProductCardDetail product={productCardDetail} key={index}/>
-                    )
-                })}
+                <ProductCardDetail product={productCardDetail}/>
             </div>
 
             <Footer></Footer>
@@ -29,12 +25,13 @@ export default function ProductDetail({productCardDetail}) {
 
 
 export async function getServerSideProps(context) {
-    const res = await fetch('http://127.0.0.1:8000/tienda/product/');
+    const id = context.params.id;
+    const res = await fetch('http://127.0.0.1:8000/tienda/product/' + id);
     const data = await res.json();
 
     return {
         props: {
-            productCardDetail: data.results,
+            productCardDetail: data,
         },
     };
 }
