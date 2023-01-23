@@ -6,14 +6,6 @@ import {useState} from "react";
 
 export default function Home({productList}) {
 
-    const [currentPage, setCurrentPage] = useState(1);
-    const pageSize = 10;
-
-    const onPageChange = (page) => {
-        setCurrentPage(page);
-    };
-
-
     return (
         <>
             <Header></Header>

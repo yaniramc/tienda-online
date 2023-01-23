@@ -1,13 +1,9 @@
-import Link from "next/link";
-import { useRouter } from 'next/router'
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ProductCardDetail from "../../components/ProductCardDetail";
 
 export default function ProductDetail({productCardDetail}) {
-    // const router = useRouter()
-    // const { id } = router.query
-
 
     return (
         <>
