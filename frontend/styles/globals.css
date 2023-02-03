@@ -72,15 +72,11 @@ footer {
 }
 
 
-.card:hover {
+.effect-hover:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
 
-.background-shoppingCart {
-    background-color: lightgrey;
-    border: 4px solid black;
-}
 
 
 /* Cambiamos el tamaño de la imagen para pantallas superiores al tamaño indicado. De esta manera, la imagen de fondo cubrirá todas los tamaños de pantalla. */

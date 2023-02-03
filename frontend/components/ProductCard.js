@@ -4,7 +4,7 @@ export default function ProductCard({product}) {
 
     return (
         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
-            <div className="card h-100 shadow-lg" style={{width:'auto'}}>
+            <div className="card effect-hover h-100 shadow-lg" style={{width:'auto'}}>
                 <img src={product.image} className="card-img-top" alt={product.name} height={270}/>
                 <div className="card-body">
                     <h5 className="card-title text-uppercase">{product.name}</h5>
@@ -16,7 +16,6 @@ export default function ProductCard({product}) {
                             <h4 className="card-title text-danger">{product.price}€</h4>
                         </div>
                     </div>
-                    <p className="card-text">{product.description}</p>
                     <Link href={{pathname: '../pageDetail/[id]', query: {id: product.id}}} className="btn generic-button text-white">Ver en detalle</Link>
                 </div>
             </div>

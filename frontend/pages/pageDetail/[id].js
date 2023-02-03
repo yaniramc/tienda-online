@@ -1,16 +1,16 @@
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import ProductCardDetail from "../../components/ProductCardDetail";
+import ProductCartDetail from "../../components/ProductCartDetail";
 
-export default function ProductDetail({productCardDetail}) {
+export default function ProductDetail({productCartDetail}) {
 
     return (
         <>
             <Header></Header>
 
             <div className="container">
-                <ProductCardDetail product={productCardDetail}/>
+                <ProductCartDetail product={productCartDetail}/>
             </div>
 
             <Footer></Footer>
@@ -27,7 +27,7 @@ export async function getServerSideProps(context) {
 
     return {
         props: {
-            productCardDetail: data,
+            productCartDetail: data,
         },
     };
 }

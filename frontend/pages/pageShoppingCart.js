@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import ShoppingCart from "../components/ShoppingCart";
+import ShoppingCartItem from "../components/ShoppingCartItem";
 
 export default function PageShoppingCart({shoppingCart}) {
     return (
@@ -9,16 +9,22 @@ export default function PageShoppingCart({shoppingCart}) {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-8 col-lg-8">
-                        <ShoppingCart product={shoppingCart} product_quantity={shoppingCart}/>
+                        {shoppingCart.map((item, index) => (
+                            <ShoppingCartItem product={item.product} product_quantity={item.product_quantity} key={index}/>
+                        ))}
                     </div>
 
                     <div className="col-sm-12 col-md-4 col-lg-4">
-                        <div className="background-shoppingCart">
-                            <ul>
-                                <li>{shoppingCart.name}</li>
-                                <li>{shoppingCart.price}</li>
-                            </ul>
-                            <h4>Total a Pagar: {parseInt(shoppingCart)}</h4>
+                        <div className="card shadow-sm">
+                            <div className="card-body">
+                                {shoppingCart.map((item, index) => (
+                                    <li key={index}>
+                                        <h4>{item.name}</h4>
+                                        <h4>{item.price}</h4>
+                                        <h4>Total a Pagar: </h4>
+                                    </li>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

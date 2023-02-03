@@ -21,7 +21,7 @@ export default function Header() {
                                 <Link className="nav-link active" aria-current="page" href="/">Inicio</Link>
                             </li>
                             <li className="nav-item mx-5">
-                                <Link className="nav-link" href="/pageShoppingCart">Mi Cesta
+                                <Link className="nav-link" href="/pageShoppingCart">Mi Carrito
                                     <img src="/images/carrito.png" alt="carrito-compra" width={25} height={25}/>
                                 </Link>
                             </li>
