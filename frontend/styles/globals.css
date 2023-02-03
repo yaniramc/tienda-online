@@ -79,7 +79,8 @@ footer {
 
 
 
-/* Cambiamos el tamaño de la imagen para pantallas superiores al tamaño indicado. De esta manera, la imagen de fondo cubrirá todas los tamaños de pantalla. */
+/* Cambiamos el tamaño de la imagen para pantallas superiores al tamaño indicado.
+De esta manera, la imagen de fondo cubrirá todas los tamaños de pantalla. */
 @media only screen and (min-width: 1920px) {
 
 
