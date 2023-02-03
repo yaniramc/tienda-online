@@ -1,7 +1,7 @@
 import {addProduct} from "./FunctionsLocalStorage";
 
 
-export default function ProductCartDetail({product}) {
+export default function ProductCardDetail({product}) {
 
     return (
         <>

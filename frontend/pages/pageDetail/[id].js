@@ -1,7 +1,7 @@
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import ProductCartDetail from "../../components/ProductCartDetail";
+import ProductCardDetail from "../../components/ProductCardDetail";
 
 export default function ProductDetail({productCartDetail}) {
 
@@ -10,7 +10,7 @@ export default function ProductDetail({productCartDetail}) {
             <Header></Header>
 
             <div className="container">
-                <ProductCartDetail product={productCartDetail}/>
+                <ProductCardDetail product={productCartDetail}/>
             </div>
 
             <Footer></Footer>

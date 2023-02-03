@@ -1,8 +1,8 @@
-import ProductCartDetail from "./ProductCartDetail";
+import ProductCardDetail from "./ProductCardDetail";
 
 
 export async function addProduct() {
 
-    localStorage.setItem('shoppingCart', JSON.stringify(ProductCartDetail));
+    localStorage.setItem('shoppingCart', JSON.stringify(ProductCardDetail));
 
 }
